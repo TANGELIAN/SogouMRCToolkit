@@ -57,7 +57,7 @@ eval_batch_generator = BatchGenerator(vocab,eval_data, batch_size=32, \
 ```
 Import the built-in model and compile the training operation, call functions such as train_and_evaluate for training and evaluation.
 ```python
-model = DrQA(vocab, word_embedding, features=feature_transformer.features,
+model = DrQA(vocab, word_embedding, features=feature_transformer.features,\
  feature_vocab=feature_transformer.vocab)
 model.compile()
 model.train_and_evaluate(train_batch_generator, eval_batch_generator, evaluator, epochs=40, eposides=2)
