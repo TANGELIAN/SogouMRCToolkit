@@ -7,7 +7,7 @@
 
 ## Installation
 ```sh
-$ git clone https://git.sogou-inc.com/yangyunlun/mrc-toolkit.git
+$ git clone https://github.com/sogou/SogouMRCToolkit.git
 $ cd mrc-toolkit
 $ pip install [-e] .
 ```
