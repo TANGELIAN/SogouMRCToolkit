@@ -57,7 +57,8 @@ eval_batch_generator = BatchGenerator(vocab,eval_data, batch_size=32, \
 ```
 Import the built-in model and compile the training operation, call functions such as train_and_evaluate for training and evaluation.
 ```python
-model = DrQA(vocab, word_embedding, features=feature_transformer.features, feature_vocab=feature_transformer.vocab)
+model = DrQA(vocab, word_embedding, features=feature_transformer.features,
+ feature_vocab=feature_transformer.vocab)
 model.compile()
 model.train_and_evaluate(train_batch_generator, eval_batch_generator, evaluator, epochs=40, eposides=2)
 ```
@@ -87,7 +88,7 @@ All of the codes are provided using built-in models running on different dataset
     - tokenizer.py: Tokenizers that can be used for both English and Chinese
     - feature_extractor: Extracting linguistic features used in some papers, e.g., POS, NER, and Lemma
 7. `libraries`
-    - –	Bert is included in this toolkit with the code from the [official source code](https://github.com/google-research/bert).
+    - Bert is included in this toolkit with the code from the [official source code](https://github.com/google-research/bert).
 
 ## Custom Model and Dataset
 - Custom models can easily be added with the description in the [tutorial](./doc/build_custom_model.md).
